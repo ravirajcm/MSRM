@@ -18,6 +18,13 @@ References used to develop this app are as below:
 I used many references from Stackoverflow to understand game logic as I never played Minesweeper before.
 But, though out my experience I learn how to start with python, use database, create migrations, apply migrations, using templates with Django, making url REGEX.
 
+#### Game support 12x12 Grid with 15 bombs
+
+### Functionality
+- Able to create Game by Name from Index Page
+- Continue game with same name if user left game in-between
+- Won/Dead states of Game
+
 ### Like/Dislike about Python and Django ?
 - Easy To read.
 - Quick Admin setup
