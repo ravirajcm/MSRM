@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div id="content">
+      <h1 id="title">Minesweeper</h1>
+      <div class="main-game-style">
+        <label for="game-name">Game Name</label>
+        <input id="input-game-name" type="text"/>
+        <button id="btn-new-game" class="btn btn-info">New Game</button>
+        <button id="btn-continue-game" class="btn btn-success">Continue Game</button>
+        <p id="errors" class="error"></p>
+      </div>
+    </div>
+{% endblock %}

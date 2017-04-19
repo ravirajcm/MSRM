@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+   <div id="content">
+      <h1 id="title">{{name|force_escape}}</h1>
+      <table id="game">
+        <tbody>{% for row in map %}
+          <tr>{% for cell in row %}
+            <td class="unclicked">{{cell|force_escape}}</td>{% endfor %}
+          </tr>{% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div id="death" class="endgame hidden">
+      <h1>DEAD!!</h1>
+    </div>
+    <div id="win" class="endgame hidden">
+      <h1>WIN!!</h1>
+    </div>
+{% endblock %}
